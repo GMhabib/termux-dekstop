@@ -1,0 +1,2 @@
+#!/bin/bash
+apt -o Dpkg::Options::="--force-overwrite" --fix-broken install
