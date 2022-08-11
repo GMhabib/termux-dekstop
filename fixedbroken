@@ -3,6 +3,9 @@ clear
 apt install pv -y
 clear
 apt -o Dpkg::Options::="--force-overwrite" --fix-broken install
+sleep 1
+clear
+apt update && clear && apt upgrade -y && sleep 1 && clear
 echo "now your install fixed" | pv -qL 30
 sleep 1
 clear
